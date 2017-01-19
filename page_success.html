@@ -99,10 +99,11 @@
         var myCenterRestaurant = new google.maps.LatLng(44.440531, 26.148270);
 
         var myCenterCununie = new google.maps.LatLng(44.441606, 26.009014);
+        initialize(myCenterRestaurant, "googleMapRestaurant");
+        initialize(myCenterCununie, "googleMapCununie");
+        // google.maps.event.addDomListener(window, 'load', initialize.bind(this, myCenterRestaurant, "googleMapRestaurant"));
 
-        google.maps.event.addDomListener(window, 'load', initialize.bind(this, myCenterRestaurant, "googleMapRestaurant"));
-
-        google.maps.event.addDomListener(window, 'load', initialize.bind(this, myCenterCununie, "googleMapCununie"));
+        // google.maps.event.addDomListener(window, 'load', initialize.bind(this, myCenterCununie, "googleMapCununie"));
     }
 
     function initialize(center, id) {
